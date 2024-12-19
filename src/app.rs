@@ -90,7 +90,7 @@ impl eframe::App for App {
                 });
                 ui.horizontal(|ui| {
                     egui::warn_if_debug_build(ui);
-                    egui::widgets::global_dark_light_mode_buttons(ui);
+                    egui::widgets::global_theme_preference_buttons(ui);
                 });
             })
             .aware();
